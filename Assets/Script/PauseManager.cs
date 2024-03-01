@@ -50,4 +50,11 @@ public class PauseManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         pauseSFX.Play();
     }
+
+    public void MainMenuButton()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+        pauseSFX.Play();
+    }
 }
